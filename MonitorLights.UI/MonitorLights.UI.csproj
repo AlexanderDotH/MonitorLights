@@ -9,6 +9,24 @@
         <AssemblyName>MonitorLights.UI</AssemblyName>
         <RootNamespace>MonitorLights.UI</RootNamespace>
         <ApplicationIcon>Assets\Flashlight.ico</ApplicationIcon>
+        <Title>MonitorLights</Title>
+        <Description>Turn your monitors into overpriced light bulbs. Perfect for midnight snacking and questionable life choices.</Description>
+        <Copyright>AlexanderDotH</Copyright>
+        <PackageProjectUrl>https://github.com/AlexanderDotH/MonitorLights</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/AlexanderDotH/MonitorLights/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageIcon>Assets\Flashlight.png</PackageIcon>
+        <RepositoryUrl>https://github.com/AlexanderDotH/MonitorLights</RepositoryUrl>
+        <RepositoryType>Public</RepositoryType>
+        <PackageTags>Tools, Monitor, Lights</PackageTags>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>AlexanderDotH.snk</AssemblyOriginatorKeyFile>
+        <PublicSign>true</PublicSign>
+        <Company>Association of Developers</Company>
+        <Product>MonitorLights</Product>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <NeutralLanguage>en-US</NeutralLanguage>
     </PropertyGroup>
 
     <ItemGroup>
@@ -37,5 +55,11 @@
 
     <ItemGroup>
       <Folder Include="Assets\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\..\..\Desktop\AlexanderDotH.snk">
+        <Link>AlexanderDotH.snk</Link>
+      </None>
     </ItemGroup>
 </Project>

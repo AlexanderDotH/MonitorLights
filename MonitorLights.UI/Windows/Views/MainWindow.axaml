@@ -9,6 +9,7 @@
         x:Class="MonitorLights.UI.Windows.Views.MainWindow"
         xmlns:vm="using:MonitorLights.UI.Windows.Models"
         xmlns:models="clr-namespace:MonitorDetails.Models;assembly=MonitorDetails"
+        WindowStartupLocation="CenterScreen"
         Title="MonitorLights">
     
     <Window.DataContext>
