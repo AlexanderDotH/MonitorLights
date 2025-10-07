@@ -4,7 +4,7 @@ Because buying a lamp is apparently too mainstream 💡
 
 Turn your expensive gaming monitors into the world's most overqualified light bulbs! Why spend $10 on a desk lamp when you can use your $500 monitor array to illuminate your midnight snack sessions?
 
-**[📥 Download Setup](https://github.com/AlexanderDotH/MonitorLights/releases/latest/download/MonitorLights-Setup.exe)**
+**[📥 Download Setup](https://github.com/AlexanderDotH/MonitorLights/releases/latest/download/MonitorLights-Setup.msi)**
 
 ## Screenshot
 <img width="320" height="240" alt="MonitorLights UI" src="https://github.com/user-attachments/assets/afbec20c-5086-4854-af76-e0ab30e125cf" />
