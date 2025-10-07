@@ -8,7 +8,7 @@
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
         <AssemblyName>MonitorLights.UI</AssemblyName>
         <RootNamespace>MonitorLights.UI</RootNamespace>
-        <ApplicationIcon>Assets\Flashlight.ico</ApplicationIcon>
+        <ApplicationIcon>Assets\Lightbulb.ico</ApplicationIcon>
         <Title>MonitorLights</Title>
         <Description>Turn your monitors into overpriced light bulbs. Perfect for midnight snacking and questionable life choices.</Description>
         <Copyright>AlexanderDotH</Copyright>
