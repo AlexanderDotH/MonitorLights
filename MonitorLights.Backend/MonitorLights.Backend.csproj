@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Config.Net" Version="5.2.1" />
+      <PackageReference Include="Dumpify" Version="0.6.6" />
+      <PackageReference Include="MonitorDetails" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Avalonia.Base">
+        <HintPath>..\MonitorLights.UI\bin\Debug\net9.0\Avalonia.Base.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

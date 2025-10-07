@@ -1,0 +1,78 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="using:FluentAvalonia.UI.Controls"
+        mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="240"
+        MaxWidth="320"
+        MaxHeight="240"
+        x:Class="MonitorLights.UI.Windows.Views.MainWindow"
+        xmlns:vm="using:MonitorLights.UI.Windows.Models"
+        xmlns:models="clr-namespace:MonitorDetails.Models;assembly=MonitorDetails"
+        Title="MonitorLights">
+    
+    <Window.DataContext>
+        <vm:MainWindowModel />
+    </Window.DataContext>
+    
+    <StackPanel Orientation="Vertical" Spacing="10">
+        
+        <StackPanel Orientation="Vertical" Spacing="20">
+            
+            <StackPanel Orientation="Vertical" 
+                        Margin="20, 20, 20, 0" 
+                        Spacing="10">
+            
+                <TextBlock Text="Monitor"/>
+                <ComboBox Name="CTRL_Monitor_Selector" Height="35" 
+                          HorizontalAlignment="Stretch"
+                          SelectionChanged="CTRL_Monitor_Selector_OnSelectionChanged"
+                          ItemsSource="{CompiledBinding Monitors, DataType=vm:MainWindowModel}"
+                          SelectedItem="{Binding SelectedMonitor, DataType=vm:MainWindowModel}">
+                   
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate DataType="models:Monitor">
+                            <StackPanel Orientation="Horizontal" Spacing="4">
+                                <TextBlock Text="{CompiledBinding Name}" VerticalAlignment="Center"/>
+
+                                <Border CornerRadius="8" Background="#0076d6" >
+                                    <StackPanel Orientation="Horizontal" Spacing="5" Margin="6,2,6,2">
+                                        <TextBlock Text="{CompiledBinding Resolution.Width}"/>
+                                        <TextBlock Text="x"></TextBlock>
+                                        <TextBlock Text="{CompiledBinding Resolution.Height}"/>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            
+            </StackPanel>
+        
+            <StackPanel Orientation="Vertical" 
+                        Margin="20, 0, 20, 0">
+                <TextBlock Text="Brightness" 
+                           Margin="0"/>
+                <Slider Name="CTRL_Brightness_Slider" 
+                        Minimum="0" 
+                        Maximum="100" 
+                        Value="100" 
+                        ValueChanged="CTRL_Brightness_Slider_OnValueChanged"/>
+            </StackPanel>
+          
+        </StackPanel>
+        
+        <Button Name="CTRL_Display_Window" 
+                VerticalAlignment="Center"
+                HorizontalAlignment="Stretch" 
+                Click="CTRL_Display_Window_OnClick"
+                Height="35" 
+                Margin="20, 0, 20, 0">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <ui:SymbolIcon Symbol="WeatherSunny"></ui:SymbolIcon>
+                <TextBlock Text="Light me up!"/>
+                <ui:SymbolIcon Symbol="WeatherSunny"></ui:SymbolIcon>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</Window>
