@@ -34,7 +34,7 @@ Turn your expensive gaming monitors into the world's most overqualified light bu
 - OS: Windows (tested on Windows 11)
 - Monitors: At least 1 (preferably 3+ to truly commit to the bit)
 
-~ This is a project for my Girl ❤️
+~ This is a project for my girl ❤️
 
 
 
